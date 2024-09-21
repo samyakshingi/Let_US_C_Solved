@@ -17,6 +17,13 @@
 
 
 int main(){
-    
+    int a = 20;
+    int *p;
+    p = &a;
+    *p = 45;
+    *p = (*p) * 45;
+    printf("%d\n", *p);
+    p++;
+    printf("%p\n", p);
     return 0;
 }
